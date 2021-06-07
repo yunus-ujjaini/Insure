@@ -1,0 +1,34 @@
+@import 'Sass/reset';
+@import 'Sass/style';
+@import 'Sass/fonts';
+@import 'Sass/navbar';
+@import 'Sass/header';
+@import 'Sass/about';
+@import 'Sass/knowmore';
+@import 'Sass/footer';
+@import 'Sass/preloader';
+
+html,body{
+    // font-family: 'DM Serif Display', serif;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    overflow: visible;
+}
+::-webkit-scrollbar              {
+    width: 5px;
+    
+}
+// ::-webkit-scrollbar-button       { 
+    
+// }
+// ::-webkit-scrollbar-track        { 
+//  }
+// ::-webkit-scrollbar-track-piece  { /* 4 */ }
+::-webkit-scrollbar-thumb        { 
+    // -webkit-border-radius: 10px;
+    // border-radius: 10px;
+    background: hsl(256, 26%, 20%);
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,1); 
+ }
+// ::-webkit-scrollbar-corner       { /* 6 */ }
+// ::-webkit-resizer                { /* 7 */ }

@@ -1,0 +1,95 @@
+.knowmore{
+    margin: 2rem 1rem;
+    padding: 5rem 1rem;
+    background: url("images/bg-pattern-how-we-work-mobile.svg") var(--DarkViolet);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 55%;
+    .knowmore__header{
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: 'DM Serif Display', serif;
+        color: white;
+        .breaker{
+            display: none;
+        }
+    }
+    .knowmore__action{
+        margin-top: 2rem;
+        text-align: center;
+        .knowmore__action__btn{
+            margin-top: 1rem;
+            background: transparent;
+            border: 2px solid white;
+            padding: 0.5rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            text-transform: uppercase;
+            &:hover{
+                cursor: pointer;
+                background-color: white;
+                color:var(--VerydarkViolet);
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content:'';
+                    top: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    right: -5px;
+                    border: 2px groove white;
+                }
+            }
+        }
+    }
+}
+@media (min-width:760px){
+    .knowmore{
+        margin: 5rem 10vw;
+        padding: 3rem 4rem;
+        background: url("images/bg-pattern-how-we-work-desktop.svg") var(--DarkViolet);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: contain;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .knowmore__header{
+            font-size: 3vw;
+            text-align: left;
+            font-family: 'DM Serif Display', serif;
+            color: white;
+            .breaker{
+                display: block;
+            }
+        }
+        .knowmore__action{
+            margin-top: 0rem;
+            text-align: center;
+            .knowmore__action__btn{
+                margin-top: 1rem;
+                background: transparent;
+                border: 2px solid white;
+                padding: 0.5rem 2rem;
+                font-size: 1.2rem;
+                color: white;
+                text-transform: uppercase;
+                &:hover{
+                    cursor: pointer;
+                    background-color: white;
+                    color:var(--DarkViolet);
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content:'';
+                        top: -5px;
+                        bottom: -5px;
+                        left: -5px;
+                        right: -5px;
+                        border: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+}

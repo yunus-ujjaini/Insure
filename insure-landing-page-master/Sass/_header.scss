@@ -1,0 +1,163 @@
+.header{
+    margin-top: 5rem;
+    .header__hero{
+        width: 100%;
+
+    }
+    .header__content{
+        position: relative;
+        padding: 30vw 5vw;
+        background-color: var(--DarkViolet);
+        background-image: url("images/bg-pattern-intro-left-mobile.svg");
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-position-y: 0px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header__content__heading{
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            line-height: 110%;
+        }
+        .header__content__main{
+            text-align: center;
+            color: var(--VeryLightgray);
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+        .header__content__btn{
+            margin-top: 1rem;
+            background: transparent;
+            border: 2px solid white;
+            padding: 0.5rem 2rem;
+            font-size: 1.2rem;
+            color: white;
+            text-transform: uppercase;
+            &:hover{
+                cursor: pointer;
+                background-color: white;
+                color:var(--VerydarkViolet);
+                position: relative;
+                &::before{
+                    position: absolute;
+                    content:'';
+                    top: -5px;
+                    bottom: -5px;
+                    left: -5px;
+                    right: -5px;
+                    border: 2px groove white;
+                }
+            }
+            
+        }
+        .intro-right-mob{
+            position: absolute;
+            top: 75%;
+            right: 0px;
+        }
+        .intro-right-desk{
+            display: none;
+        }
+        .intro-left-desk{
+            display: none;
+        }
+    }
+}
+@media (min-width:760px){
+    .header{
+        margin-top: 5rem;
+        position: relative;
+        .header__hero{
+            width: 40vw;
+            position: absolute;
+            z-index: 2;
+            bottom: -30%;
+            right:10%
+        }
+        .header__content{
+            
+            position: relative;
+            padding: 10vw 10vw;
+            background-color: var(--DarkViolet);
+            background-image: none;
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-position-y: 0px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .header__content__heading{
+                font-family: 'DM Serif Display', serif;
+                font-size: 4vw;
+                text-align: left;
+                line-height: 110%;
+                position: relative;
+                &::before{
+                    content:'';
+                    position: absolute;
+                    left: 0px;
+                    right: 65%;
+                    height: 0.1rem;
+                    top: -40%;
+                    background-color: rgba(255,255,255,0.7);
+                }
+            }
+            .header__content__main{
+                text-align: left;
+                color: var(--VeryLightgray);
+                margin-top: 2vw;
+                font-size: 1.2vw;
+                width: 40%;
+            }
+            .header__content__btn{
+                margin-top: 1vw;
+                background: transparent;
+                border: 2px solid white;
+                padding: 0.5vw 2vw;
+                font-size: 1.2vw;
+                color: white;
+                text-transform: uppercase;
+                &:hover{
+                    cursor: pointer;
+                    background-color: white;
+                    color:var(--DarkViolet);
+                    position: relative;
+                    &::before{
+                        position: absolute;
+                        content:'';
+                        top: -5px;
+                        bottom: -5px;
+                        left: -5px;
+                        right: -5px;
+                        border: 2px solid white;
+                    }
+                }
+            }
+            .intro-right-mob{
+                position: absolute;
+                top: 75%;
+                right: 0px;
+                display: none;
+            }
+            .intro-right-desk{
+                display: block;
+                position: absolute;
+                top: -10%;
+                right: 0;
+                height: 80%;
+                z-index: 2;
+            }
+            .intro-left-desk{
+                display: block;
+                position: absolute;
+                bottom: -40%;
+                left: 0px;
+                height: 60%;
+            }
+        }
+    }
+}
